@@ -11,11 +11,7 @@ spring:
         - id: app
           uri: http://localhost:8081
           predicates:
-            - Path=/orders/** 
-        - id: store
-          uri: http://localhost:8085
-          predicates:
-            - Path=/storeManages/** 
+            - Path=/orders/**
         - id: pay
           uri: http://localhost:8083
           predicates:
@@ -24,6 +20,10 @@ spring:
           uri: http://localhost:8084
           predicates:
             - Path= /customers/**
+        - id: store
+          uri: http://localhost:8085
+          predicates:
+            - Path=/storeManages/**
         - id: promotion
           uri: http://localhost:8086
           predicates:
@@ -50,11 +50,7 @@ spring:
         - id: app
           uri: http://app:8080
           predicates:
-            - Path=/orders/** 
-        - id: store
-          uri: http://store:8080
-          predicates:
-            - Path=/storeManages/** 
+            - Path=/orders/**
         - id: pay
           uri: http://pay:8080
           predicates:
@@ -63,6 +59,10 @@ spring:
           uri: http://customer:8080
           predicates:
             - Path= /customers/**
+        - id: store
+          uri: http://store:8080
+          predicates:
+            - Path=/storeManages/**
         - id: promotion
           uri: http://promotion:8080
           predicates:
